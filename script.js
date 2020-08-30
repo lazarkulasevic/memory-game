@@ -274,8 +274,18 @@ function stopTimer() {
 
 function rankUsers(selectScoreBoard) {
     selectScoreBoard.push(user);
-    // selectScoreBoard.sort((a, b) => b.time < a.time);
-    selectScoreBoard.sort((a, b) => b.time - a.time);
+    selectScoreBoard.sort((a, b) => {
+        let minA = a.time.substring(0, 2);
+        let secA = a.time.substring(3, 5)
+        
+        let minB = b.time.substring(0, 2);
+        let secB = b.time.substring(3, 5)
+
+        a = minA * 60 + secA;
+        b = minB * 60 + secB;
+
+        return a - b;
+    });
     selectScoreBoard.splice(5);
 }
 
