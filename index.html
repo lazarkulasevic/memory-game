@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="col-12 col-t-12">
+        <h1 class="title">Memory Game</h1>
+        <input type="text" name="timer" value="0"> <br>
+    </header>
+
+    <section class="form col-7 col-t-12">
+        <form id="name">
+            <input type="text" name="name" autocomplete="off" placeholder="Your name" required>
+            <div id="check-icon">✓</div>
+            <button type="submit" name="submit-name">OK</button>
+        </form>
+    </section>
+
+    <section class="col-7 col-t-12">
+        <p class="pick-level">ENTER YOUR NAME AND <span class="span-level">PICK A LEVEL</span></p>
+        <div class="radio-group">
+            <input type="radio" id="easy" name="level" value="Easy">
+            <label for="easy">Easy</label>
+            <input type="radio" id="medium" name="level" value="Medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="hard" name="level" value="Hard">
+            <label for="hard">Hard</label>
+            <input type="radio" id="expert" name="level" value="Expert">
+            <label for="expert">Expert</label>
+        </div>
+        <br>
+        <div class="game-wrapper">
+           <table id="game"></table>
+        </div>
+        <div class="spacer"></div>
+    </section>
+
+    <section class="col-5 col-t-12">
+        <button id='high-scores'>HIGH SCORES</button>
+        <button id='reload'>START NEW GAME</button>
+
+        <br><br>
+        
+        <div class="results">
+            <table id="results"></table>
+        </div>
+        <div class="spacer"></div>
+    </section>
+
+    <footer class="col-12 col-t-12">
+        <div class="about">
+            <p class="developer">
+                Memory Game built from scratch using only HTML5, CSS3 & vanilla Javascript.
+            </p>
+            <p>
+                When the game starts, all cards are turned face down.
+                The player then flips over two cards, selecting them by clicking on them.
+                If the two cards have the same image, they remain face up. If not, they are flipped face down again after a short delay. When all cards on the board are facing up the timer stops and the results board pops up with top five player's names.
+            </p>
+            <p class="developer">
+                Created with <span>&hearts;</span> by <a href="https://github.com/lazarkulasevic">Lazar Kulasevic</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
