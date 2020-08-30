@@ -116,7 +116,7 @@ function addImagesToCells(cells) {
         images.push(i);
     }
 
-    shuffle(images);
+    // shuffle(images);
 
     tdElementAll.forEach((td, i) => {
         td.addEventListener('click', flipCard);
@@ -274,7 +274,8 @@ function stopTimer() {
 
 function rankUsers(selectScoreBoard) {
     selectScoreBoard.push(user);
-    selectScoreBoard.sort((a, b) => b.time < a.time);
+    // selectScoreBoard.sort((a, b) => b.time < a.time);
+    selectScoreBoard.sort((a, b) => b.time - a.time);
     selectScoreBoard.splice(5);
 }
 
