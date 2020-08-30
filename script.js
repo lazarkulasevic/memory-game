@@ -116,7 +116,7 @@ function addImagesToCells(cells) {
         images.push(i);
     }
 
-    // shuffle(images);
+    shuffle(images);
 
     tdElementAll.forEach((td, i) => {
         td.addEventListener('click', flipCard);
