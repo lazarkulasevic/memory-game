@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #fdfcfb;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 } 
 
@@ -33,6 +34,7 @@ section {
 }
 
 footer {
+    background-color: #febe20;
     background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 50%, #febe20 100%);
     color: black;
 }
