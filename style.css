@@ -275,6 +275,7 @@ input[type=radio]:checked + label {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transition: 0.35s;
+    -webkit-transition: 0.35s;
     box-shadow: 2px 2px #7fa6b3;
 }
 
@@ -287,6 +288,7 @@ input[type=radio]:checked + label {
     width: 50px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    visibility: visible; /* Safari fix */
 }
 
 .back-face {
