@@ -512,7 +512,6 @@ function extractUserTime(selectScoreBoard) {
     if (selectScoreBoard == null) {
         userName = "";
         userTime = "";
-        console.log('scoreboard is null')
     } else {
         selectScoreBoard.forEach(board => {
             userName.push(board.name);
