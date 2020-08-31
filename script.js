@@ -118,7 +118,7 @@ function addImagesToCells(cells) {
 
     shuffle(images);
 
-    tdElementAll.forEach((td, i) => {
+    tdElementAll.forEach((td, i) => { 
         td.addEventListener('click', flipCard);
 
         td.classList.add('card', resizeCardsClass(cells)[0]);
@@ -168,7 +168,7 @@ function flipCard() {
     btnHighScores.disabled = true;
 
     if (lockBoard) return; // prevent from opening more than 2 cards at once
-    if (this == firstCard) return; // prevent "double-click" bug
+    if (this == firstCard) return; // prevent double-click bug
 
     this.classList.add('flip');
 
@@ -274,12 +274,12 @@ function stopTimer() {
 
 function rankUsers(selectScoreBoard) {
     selectScoreBoard.push(user);
-    selectScoreBoard.sort((a, b) => {
+    selectScoreBoard.sort((a, b) => { 
         let minA = a.time.substring(0, 2);
-        let secA = a.time.substring(3, 5)
+        let secA = a.time.substring(3, 5);
         
         let minB = b.time.substring(0, 2);
-        let secB = b.time.substring(3, 5)
+        let secB = b.time.substring(3, 5);
 
         a = minA * 60 + secA;
         b = minB * 60 + secB;
