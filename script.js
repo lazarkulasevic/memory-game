@@ -509,10 +509,16 @@ function printSelectedBoard() {
 
 function extractUserTime(selectScoreBoard) {
     userName = []; userTime = []; 
-    selectScoreBoard.forEach(board => {
-        userName.push(board.name);
-        userTime.push(board.time);
-    });
+    if (selectScoreBoard == null) {
+        userName = "";
+        userTime = "";
+        console.log('scoreboard is null')
+    } else {
+        selectScoreBoard.forEach(board => {
+            userName.push(board.name);
+            userTime.push(board.time);
+        });
+    }
     return [userName, userTime];
 }
 
