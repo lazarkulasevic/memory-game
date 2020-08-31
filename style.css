@@ -286,13 +286,11 @@ input[type=radio]:checked + label {
 
 .back-face, .front-face {
     width: 50px;
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;  */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
 }
 
 .back-face {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
