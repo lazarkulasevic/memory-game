@@ -536,7 +536,6 @@ input[type=radio]:checked + label {
 }
 
 /* Keyframes - annimations */
-
 .timer-blinker {
     -webkit-animation: blinker 2s infinite; 
     -moz-animation:    blinker 2s infinite; 
