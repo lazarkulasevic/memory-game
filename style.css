@@ -306,14 +306,12 @@ input[type=radio]:checked + label {
     border-radius: 6px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    -moz-backface-visibility: hidden; 
     /* -webkit-backface-visibility: hidden; */
     backface-visibility: hidden; 
 }
 
 .front-face {
     transform: rotateY(180deg);
-    -moz-backface-visibility: hidden; 
     backface-visibility: hidden; 
 }
 
