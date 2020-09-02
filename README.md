@@ -12,7 +12,7 @@ The game is fully responsive thoughout devices (i.e. desktop screen, tablet and 
 This game is Firefox and Chrome friendly. 
 Upon solving the game on any level it automatically stores results in the **local storage** and prints them out right away or later on demand.
 
-### Credit
+#### Credit
 
 Images: Animal Icon Pack by [Flat Icons](https://www.flaticon.com/authors/flat-icons)
 
