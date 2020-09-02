@@ -1,3 +1,7 @@
+// Game Functionality  [170]
+// Local Storage       [287]
+// Display Results     [371]
+
 let inputTimer = document.querySelector('input[name=timer]');
 
 let formName = document.getElementById('name');
@@ -25,7 +29,7 @@ inputRadioAll[0].checked = true;
 // Style related scripts
 let divCheckIcon = document.getElementById('check-icon');
 let divSpacer = document.querySelectorAll('.spacer');
-
+// resize on desktop
 function spacerResize() {
     divSpacer.forEach(div => {
         div.classList.add('spacer-shorter');
@@ -45,7 +49,7 @@ function disableForm(boolean) {
     btnSubmitName.disabled = boolean;
 }
 
-// works with ENTER too :)
+// Submit name
 formName.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -103,7 +107,6 @@ inputRadioAll.forEach(radio => {
         createTable(rows);
         addImagesToCells(rows*rows);
 
-        // resize spacer on desktop
         spacerResize();
     });
 });
@@ -161,9 +164,9 @@ function resizeCardsClass(cells) {
     }
 }
 
-// ################################################## //
-// ############### GAME FUNCTIONALITY ############### //
-// ################################################## //
+// ##################################################
+// ############### GAME FUNCTIONALITY ###############
+// ##################################################
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -213,7 +216,7 @@ function disableCards() {
 
 // unflip if not matching
 function unflipCards() {
-    lockBoard = true;
+    lockBoard = true; 
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
@@ -278,9 +281,9 @@ function stopTimer() {
     }
 }
 
-// ################################################## //
-// ###############   LOCAL STORAGE   ################ //
-// ################################################## //
+// ##################################################
+// ###############   LOCAL STORAGE   ################
+// ##################################################
 
 function rankUsers(selectScoreBoard) {
     selectScoreBoard.push(user);
@@ -362,9 +365,9 @@ function storeInLocal() {
     scoreBoardAll(inputRadio.value);
 }
 
-// ################################################## //
-// ##############   DISPLAY RESULTS   ############### //
-// ################################################## //
+// ##################################################
+// ##############   DISPLAY RESULTS   ###############
+// ##################################################
 
 function createTableResults(rows) {
     // create divs for levels
