@@ -5,11 +5,10 @@ Built from scratch using only:
 - CSS3 
 - Vanilla Javascript
 
-The game is fully responsive thoughout devices (i.e. desktop screen, tablet and phone). 
+The game is fully responsive thoughout devices (i.e. desktop screen, tablet and phone) and Firefox, Chrome and Safari friendly (tested).
 
 ## [PLAY NOW :video_game:](https://lazarkulasevic.github.io/)
 
-This game is Firefox and Chrome friendly. 
 Upon solving the game on any level it automatically stores results in the **local storage** and prints them out right away or later on demand.
 
 #### Credit
