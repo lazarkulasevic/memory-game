@@ -24,6 +24,13 @@ inputRadioAll[0].checked = true;
 
 // Style related scripts
 let divCheckIcon = document.getElementById('check-icon');
+let divSpacer = document.querySelectorAll('.spacer');
+
+function spacerResize() {
+    divSpacer.forEach(div => {
+        div.classList.add('spacer-shorter');
+    });
+}
 
 // radio buttons disabled
 function disableRadio(boolean) {
@@ -95,6 +102,9 @@ inputRadioAll.forEach(radio => {
 
         createTable(rows);
         addImagesToCells(rows*rows);
+
+        // resize spacer on desktop
+        spacerResize();
     });
 });
 
@@ -546,6 +556,7 @@ btnHighScores.addEventListener('click', () => {
         btnReload.classList.add('reload-blinker');
     }, 5000);
 
+    spacerResize();
 }, {once: true});
 
 btnReload.addEventListener('click', event => {

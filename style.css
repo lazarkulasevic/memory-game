@@ -24,6 +24,10 @@ section {
     text-align: center;
 }
 
+.background {
+    content: "Memory Game"
+}
+
 .results {
     display: flex;
     justify-content: center;
@@ -368,7 +372,7 @@ input[type=radio]:checked + label {
 #results td {
     width: 80px;
     height: 30px;
-    background: #d6d6d6;
+    background: #a5d4fa75;
     text-align: center;
     transform: skewX(-6deg);
 }
@@ -506,6 +510,26 @@ input[type=radio]:checked + label {
         float: left;
     }
 
+    header:before, header:after {
+        position: absolute;
+        z-index: -1;
+        color: #2da5dd15;
+    }
+
+    header:before {
+        content: "Memory";
+        font-size: 220px;
+        left: 8%;
+        top: 20px;
+    }
+
+    header:after {
+        content: "Game";
+        font-size: 220px;
+        left: 44%;
+        top: 220px;
+    }
+
     .expert {   
         width: 32px;
         height: 32px;
@@ -521,6 +545,10 @@ input[type=radio]:checked + label {
 
     .spacer {
         height: 240px;
+    }
+
+    .spacer-shorter {
+        height: 100px;
     }
 
     .about {
