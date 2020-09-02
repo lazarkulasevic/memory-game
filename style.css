@@ -288,6 +288,7 @@ input[type=radio]:checked + label {
 
 .back-face, .front-face {
     width: 50px;
+    -moz-backface-visibility: hidden; 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; 
 }
@@ -585,21 +586,21 @@ input[type=radio]:checked + label {
     100% { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
 }
 
-@-webkit-keyframes blinker {
+@-webkit-keyframes reload {
     0%   { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
     25%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
     50%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
     100% { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
 }
 
-@-moz-keyframes blinker {
+@-moz-keyframes reload {
     0%   { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
     25%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
     50%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
     100% { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
 }
   
-@-o-keyframes blinker {
+@-o-keyframes reload {
     0%   { background-image:  linear-gradient(120deg, #febe20 0%, #ffdf68 100%) }
     25%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
     50%  { background-image:  linear-gradient(120deg, #58c02e 0%, #48ff00 100%) }
