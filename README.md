@@ -7,7 +7,7 @@ Built from scratch using only:
 
 The game is fully responsive thoughout devices (i.e. desktop screen, tablet and phone) and Firefox, Chrome and Safari friendly (tested).
 
-## [PLAY NOW :video_game:](https://lazarkulasevic.github.io/)
+## [PLAY NOW :video_game:](https://lazarkulasevic.github.io/memory-game)
 
 Upon solving the game on any level it automatically stores results in the **local storage** and prints them out right away or later on demand.
 
